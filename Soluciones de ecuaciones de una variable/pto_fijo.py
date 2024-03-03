@@ -1,50 +1,18 @@
 import numpy as np
 
 def funcion(x):
-    return eval(def_funcion)
+    return eval(def_funcion)  # Utiliza eval para evaluar la expresión de la función
 
-def refinar_intervalo(x1, x2):
-    ajuste = 0.1
-
-    while funcion(x1) * funcion(x2) > 0:
-        x1 += ajuste
-        x2 -= ajuste
-
-        if x1 >= x2:
-            print("No se pudo encontrar un intervalo refinado.")
-            return 
-
-    return x1, x2
-
-def metodo_biseccion(x1=-10, x2=10, tolerancia=0.0001, max_iter=1000):
-   
-    ref = refinar_intervalo(x1, x2)
-    if ref is None:
-        return None
-
-    a, b = ref
-    iteracion = 1
-
-    while iteracion <= max_iter:
-        # Encuentra el punto medio
-        c = (a + b) / 2
-
-        # Verifica si c es la raíz
-        if abs(funcion(c)) < tolerancia:
-            print(f"La raíz aproximada es: {c}")
-            return c
-
-        # Actualiza los extremos del intervalo
-        if funcion(c) * funcion(a) < 0:
-            b = c
-        else:
-            a = c
-
-        iteracion += 1
-
-    print("El método de bisección no converge después de las iteraciones especificadas.")
-    return None
-
-def_funcion = input("Ingrese una función de x (por ejemplo, 'x**2 - 4'): ")
-
-resultado = metodo_biseccion()
+def punto_fijo(P0=1, tolerancia=0.000001, max_iter=10000):
+    iteracion = 0  # Iniciar desde la iteración 0
+    for i in range(max_iter):
+        x = funcion(P0)
+        if (abs(x - P0) < tolerancia):
+            print(f"Raíz encontrada: {x}")
+            return
+        P0 = x 
+    print(f"Se alcanzó el número máximo de iteraciones ({max_iter}). La aproximación actual es: {x}")
+    return 
+def_funcion = input("Ingrese una función de x despejando x(por ejemplo para 'x**2 + 7*x + 12'-->'-(x**2 + 12)/7'): ")
+d0 = float(input("Ingrese una semilla: "))
+res = punto_fijo(P0=d0)
