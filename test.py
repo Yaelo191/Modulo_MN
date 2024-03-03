@@ -1,5 +1,5 @@
 import numpy as np
-
+from Soluciones_de_ecuaciones_de _una_variable import metodo_newton
 def funcion(x):
     return eval(def_funcion) 
 def funcion_prime(x):
