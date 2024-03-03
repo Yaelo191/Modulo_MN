@@ -1,13 +1,28 @@
-def funcion_a_evaluar(x):
-    # Define la función que quieres encontrar la raíz
-    return x**2 - 4
+import numpy as np
 
-def metodo_biseccion(funcion, a, b, tol=0.0001, max_iter=1000):
-    # Verifica si los valores iniciales cumplen con el teorema de Bolzano
-    if funcion_a_evaluar(a) * funcion_a_evaluar(b) > 0:
-        print("")
+def funcion(x):
+    return eval(def_funcion)
+
+def refinar_intervalo(x1, x2):
+    ajuste = 0.1
+
+    while funcion(x1) * funcion(x2) > 0:
+        x1 += ajuste
+        x2 -= ajuste
+
+        if x1 >= x2:
+            print("No se pudo encontrar un intervalo refinado.")
+            return 
+
+    return x1, x2
+
+def metodo_biseccion(x1=-10, x2=10, tolerancia=0.0001, max_iter=1000):
+   
+    ref = refinar_intervalo(x1, x2)
+    if ref is None:
         return None
 
+    a, b = ref
     iteracion = 1
 
     while iteracion <= max_iter:
@@ -15,19 +30,21 @@ def metodo_biseccion(funcion, a, b, tol=0.0001, max_iter=1000):
         c = (a + b) / 2
 
         # Verifica si c es la raíz
-        if abs(funcion_a_evaluar(c)) < tolerancia:
+        if abs(funcion(c)) < tolerancia:
             print(f"La raíz aproximada es: {c}")
             return c
 
         # Actualiza los extremos del intervalo
-        if funcion_a_evaluar(c) * funcion_a_evaluar(a) < 0:
+        if funcion(c) * funcion(a) < 0:
             b = c
         else:
             a = c
 
         iteracion += 1
 
-    print(f"El método de bisección no convergió después de {iteracion}")
+    print("El método de bisección no converge después de las iteraciones especificadas.")
     return None
-resultado = metodo_biseccion(a, b, tolerancia, max_iter)
 
+def_funcion = input("Ingrese una función de x (por ejemplo, 'x**2 - 4'): ")
+
+resultado = metodo_biseccion()
