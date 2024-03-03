@@ -1,0 +1,5 @@
+from .Soluciones_de_ecuaciones_de _una_variable.bisec import metodo_biseccion
+from .Soluciones_de_ecuaciones_de _una_variable.newton import metodo_newton
+from .Soluciones_de_ecuaciones_de _una_variable.secante import metodo_secante
+from .Soluciones_de_ecuaciones_de _una_variable.secante_v2 import metodo_secante_v2
+from .Soluciones_de_ecuaciones_de _una_variable.pto_fijo import metodo_pto_fijo
