@@ -1,6 +1,6 @@
 import numpy as np
 
-def metodo_newton_v2(funcion, funcion_prime, a=-10, b=10, tolerancia=0.0000001, max_iter=10000):
+def metodo_newton_v2(def_funcion, def_funcion_prime, a=-10, b=10, tolerancia=0.0000001, max_iter=10000):
     funcion = lambda x: eval(def_funcion)
     funcion_prime = lambda x: eval(def_funcion_prime)
     
@@ -42,9 +42,4 @@ def metodo_newton_v2(funcion, funcion_prime, a=-10, b=10, tolerancia=0.0000001, 
             P0 = x 
         else:
             print(f"Se alcanzó el número máximo de iteraciones ({max_iter}).")
-
-def_funcion = input("Ingrese una función de x (por ejemplo 'x**2 + 7*x + 12'): ")
-def_funcion_prime = input("Ingrese la derivada de la función anterior (por ejemplo para '2*x + 7'): ")
-
-metodo_newton_v2(def_funcion, def_funcion_prime)
 

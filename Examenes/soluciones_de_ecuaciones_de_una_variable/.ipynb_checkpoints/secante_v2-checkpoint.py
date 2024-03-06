@@ -35,5 +35,5 @@ def metodo_secante_v2(def_funcion, a=1, b=10, tolerancia=0.000001, max_iter=1000
             return
         P0 = x
         q1 = funcion(x)
-    print(f"Se alcanzó el número máximo de iteraciones ({max_iter}).")
+    print(f"Se alcanzó el número máximo de iteraciones ({max_iter}). La aproximación actual es: {x}")
     return 
