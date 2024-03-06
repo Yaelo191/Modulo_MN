@@ -1,6 +1,6 @@
 import numpy as np
 
-def punto_fijo(def_funcion, P0=1, tolerancia=0.000001, max_iter=10000):
+def metodo_punto_fijo(def_funcion, P0=1, tolerancia=0.000001, max_iter=10000):
     """
     metodo de punto fijo
     In:
@@ -20,9 +20,6 @@ def punto_fijo(def_funcion, P0=1, tolerancia=0.000001, max_iter=10000):
             print(f"Raíz encontrada: {x}")
             return
         P0 = x 
-    print(f"Se alcanzó el número máximo de iteraciones ({max_iter}). La aproximación actual es: {x}")
+    print(f"Se alcanzó el número máximo de iteraciones ({max_iter})")
     return 
     
-def_funcion = input("Ingrese una función de x despejando x(por ejemplo para 'x**2 + 7*x + 12'-->'-(x**2 + 12)/7'): ")
-d0 = float(input("Ingrese una semilla: "))
-res = punto_fijo(def_funcion)

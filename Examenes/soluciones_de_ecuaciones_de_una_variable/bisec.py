@@ -20,7 +20,7 @@ def encontrar_intervalo(funcion, inicio=-10, fin=10, paso=0.1):
         x += paso
 
 def metodo_biseccion(def_funcion, inicio=-10, fin=10, tolerancia=0.00001, max_iter=1000):
-     """
+    """
     Metodo de biseccion
     In:
     def_funcion: Recibe una funcion f(x) a modo de string.

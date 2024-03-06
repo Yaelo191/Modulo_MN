@@ -27,4 +27,4 @@ def metodo_newton(def_funcion, def_funcion_prime, P0=1, tolerancia=0.000001, max
 def_funcion = input("Ingrese una función de x (por ejemplo 'x**2 + 7*x + 12': ")
 def_funcion_prime = input("Ingrese la derivada de la funcion anterior (por ejemplo para '2*x +7': ")
 d0 = float(input("Ingrese una semilla: "))
-res = metodo_newton(def_funcion, def_funcion_prime P0=d0)
+res = metodo_newton(def_funcion, def_funcion_prime, P0=d0)
