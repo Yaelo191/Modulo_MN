@@ -1,7 +1,7 @@
 import numpy as np
 
 def punto_fijo(def_funcion, P0=1, tolerancia=0.000001, max_iter=10000):
-         """
+    """
     metodo de punto fijo
     In:
     def_funcion: Recibe una funcion f(x) a modo de string.

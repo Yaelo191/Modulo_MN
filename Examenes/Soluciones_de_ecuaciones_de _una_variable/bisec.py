@@ -35,7 +35,7 @@ def metodo_biseccion(def_funcion, inicio=-10, fin=10, tolerancia=0.00001, max_it
     """
     funcion = lambda x: eval(def_funcion)
     intervalos = encontrar_intervalo(funcion, inicio, fin)
-    raices = [] #crea un array que contenga las raices
+    raices = [] 
     
     for intervalo in intervalos:
         a, b = intervalo
@@ -65,7 +65,5 @@ def metodo_biseccion(def_funcion, inicio=-10, fin=10, tolerancia=0.00001, max_it
     print("Fin del programa")
     return raices #Devuelve las raices en forma de array para sser utlizadas despues
     
-# Ingreso de la funcion
 def_funcion = input("Ingrese una función de x (por ejemplo, 'x**2 - 4'): ")
-# Llamada a la función
 metodo_biseccion(def_funcion, -10, 10)

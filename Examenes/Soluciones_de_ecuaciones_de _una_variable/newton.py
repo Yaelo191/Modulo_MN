@@ -1,5 +1,5 @@
 import numpy as np
-from .bisec import metodo_biseccion, encontrar intervalo    
+    
 def metodo_newton(def_funcion, def_funcion_prime, P0=1, tolerancia=0.000001, max_iter=10000):
     """
     Metodo de newton

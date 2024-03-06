@@ -1,7 +1,7 @@
 import numpy as np
 
 def secante_v2(def_funcion, a=1, b=10, tolerancia=0.000001, max_iter=10000):
-            """
+    """
     Metodo secante v2
     In:
     def_funcion: Recibe una funcion f(x) a modo de string.

@@ -32,5 +32,4 @@ def metodo_newton_v2(funcion, funcion_prime, a=-100, b=100, tolerancia=0.000001,
 
 def_funcion = input("Ingrese una función de x (por ejemplo 'x**2 + 7*x + 12'): ")
 def_funcion_prime = input("Ingrese la derivada de la función anterior (por ejemplo para '2*x +7'): ")
-# Llamada a la función con las raíces iniciales
 metodo_newton_v2(def_funcion, def_funcion_prime)
