@@ -32,7 +32,7 @@ def integracion_boole(f, a , b , Npuntos=100):
         Resultado += contribucion
     print(f"La integral da como resultado: ")
     print(Resultado)
-    return
+    return Resultado
     
     
-#integracion_boole(f, a , b)
+#integracion_boole(f, a , b, Npuntos)
