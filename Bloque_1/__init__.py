@@ -15,6 +15,8 @@ from .Integrales.rect_cen import integracion_rect_cen
 from .Integrales.trap import integracion_trap
 from .Integrales.simpson_1_3 import integracion_simpson_1_3
 from .Integrales.simpson_3_8 import integracion_simpson_3_8
+from .EDO.edo_rk4 import edo_rk4
+from .EDO.edo_euler import edo_euler
 
 __all__ = [
     'dif_central',
@@ -34,6 +36,8 @@ __all__ = [
     'integracion_rect_cen',
     'integracion_trap',
     'integracion_simpson_1_3',
-    'integracion_simpson_3_8'      
+    'integracion_simpson_3_8',
+    'edo_euler',
+    'edo_rk4'
 ]
 
