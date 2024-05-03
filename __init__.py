@@ -16,7 +16,7 @@ from .Bloque_1.Integrales.trap import integracion_trap
 from .Bloque_1.Integrales.simpson_1_3 import integracion_simpson_1_3
 from .Bloque_1.Integrales.simpson_3_8 import integracion_simpson_3_8
 from .Bloque_1.EDO.edo_rk4 import edo_rk4
-from .Bloque_1.EDO.edo_euler import edo_euler
+from .Bloque_1.EDO.edo_euler import edo_euler, mejorado_euler
 
 __all__ = [
     'dif_central',
@@ -38,6 +38,7 @@ __all__ = [
     'integracion_simpson_1_3',
     'integracion_simpson_3_8',
     'edo_euler',
+    'mejorado_euler',
     'edo_rk4'
 ]
 
