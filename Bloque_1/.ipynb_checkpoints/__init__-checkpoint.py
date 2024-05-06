@@ -16,6 +16,7 @@ from .Integrales.trap import integracion_trap
 from .Integrales.simpson_1_3 import integracion_simpson_1_3
 from .Integrales.simpson_3_8 import integracion_simpson_3_8
 from .EDO.edo_rk4 import edo_rk4
+from .EDO.rk4_adaptive import rk4_global
 from .EDO.edo_euler import edo_euler, mejorado_euler
 
 __all__ = [
@@ -39,6 +40,7 @@ __all__ = [
     'integracion_simpson_3_8',
     'edo_euler',
     'mejorado_euler',
-    'edo_rk4'
+    'edo_rk4',
+    'rk4_global'
 ]
 
