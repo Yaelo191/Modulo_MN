@@ -64,5 +64,5 @@ def metodo_biseccion(def_funcion, inicio=-10, fin=10, tolerancia=1e-05, max_iter
             iteracion += 1
 
     print("Fin del programa")
-    return raices #Devuelve las raices en forma de array para sser utlizadas despues
+    return raices #Devuelve las raices en forma de array para ser utlizadas despues
 
