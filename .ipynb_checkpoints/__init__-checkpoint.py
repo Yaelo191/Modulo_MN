@@ -18,7 +18,10 @@ from .Bloque_1.Integrales.simpson_3_8 import integracion_simpson_3_8
 from .Bloque_1.EDO.edo_rk4 import edo_rk4
 from .Bloque_1.EDO.rk4_adaptive import rk4_global
 from .Bloque_1.EDO.edo_euler import edo_euler, mejorado_euler
-
+from .Bloque_1.Interpolacion.legengre import lege_interpol
+from .Bloque_1.Interpolacion.splinelineal import linear_spline_interpolation
+from .Bloque_1.Interpolacion.gaussNewton import gaussnewton, getKrs, relErrorTot
+from .Bloque1.Interpolacion.FFT import fftinterp, fft
 __all__ = [
     'dif_central',
     'dif_central_4to',
@@ -41,6 +44,13 @@ __all__ = [
     'edo_euler',
     'mejorado_euler',
     'edo_rk4',
-    'rk4_global'
+    'rk4_global',
+    'lege_interpol',
+    'linear_spline_interpolation',
+    'gaussnewton',
+    'getKrs',
+    'relErrorTot',
+    'fftinterp',
+    'fft'
 ]
 
