@@ -1,5 +1,6 @@
 from .Derivadas.dif_cen import dif_central
 from .Derivadas.dif_cen import dif_central_4to
+from .Derivadas.dif_cen import segunda_dif_central
 from .Derivadas.dif_nc import dif_derecha
 from .Derivadas.dif_nc import dif_izquierda
 from .Raíces.Modulos_Raíces.bisec import metodo_biseccion, encontrar_intervalo
@@ -27,6 +28,7 @@ __all__ = [
     'dif_central_4to',
     'dif_derecha',
     'dif_izquierda',
+    'segunda_dif_central',
     'metodo_biseccion',
     'encontrar_intervalo',
     'metodo_newton_v2',

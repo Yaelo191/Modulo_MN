@@ -1,5 +1,6 @@
 from .Derivadas.dif_cen import dif_central
 from .Derivadas.dif_cen import dif_central_4to
+from .Derivadas.dif_cen import segunda_dif_central
 from .Derivadas.dif_nc import dif_derecha
 from .Derivadas.dif_nc import dif_izquierda
 from .Raíces.Modulos_Raíces.bisec import metodo_biseccion, encontrar_intervalo
@@ -21,11 +22,13 @@ from .EDO.edo_euler import edo_euler, mejorado_euler
 from .Interpolacion.legengre import lege_interpol
 from .Interpolacion.splinelineal import linear_spline_interpolation
 from .Interpolacion.gaussNewton import gaussnewton, getKrs, relErrorTot
+from .Interpolacion.FFT import fftinterp, fft
 __all__ = [
     'dif_central',
     'dif_central_4to',
     'dif_derecha',
     'dif_izquierda',
+    'segunda_dif_central',
     'metodo_biseccion',
     'encontrar_intervalo',
     'metodo_newton_v2',
@@ -50,6 +53,8 @@ __all__ = [
     'linear_spline_interpolation',
     'gaussnewton',
     'getKrs',
-    'relErrorTot'
+    'relErrorTot',
+    'fftinterp',
+    'fft'
 ]
 

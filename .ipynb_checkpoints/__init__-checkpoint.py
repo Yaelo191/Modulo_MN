@@ -1,5 +1,6 @@
 from .Bloque_1.Derivadas.dif_cen import dif_central
 from .Bloque_1.Derivadas.dif_cen import dif_central_4to
+from .Bloque_1.Derivadas.dif_cen import segunda_dif_central
 from .Bloque_1.Derivadas.dif_nc import dif_derecha
 from .Bloque_1.Derivadas.dif_nc import dif_izquierda
 from .Bloque_1.Raíces.Modulos_Raíces.bisec import metodo_biseccion, encontrar_intervalo
@@ -25,6 +26,7 @@ from .Bloque1.Interpolacion.FFT import fftinterp, fft
 __all__ = [
     'dif_central',
     'dif_central_4to',
+    'segunda_dif_central',
     'dif_derecha',
     'dif_izquierda',
     'metodo_biseccion',

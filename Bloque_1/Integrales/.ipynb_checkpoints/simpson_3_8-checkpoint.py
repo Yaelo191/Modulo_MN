@@ -7,7 +7,7 @@ import numpy as np
 #b = 1.
 #Npuntos=51
 
-def integracion_simpson_3_8(f, a , b , Npuntos=100):
+def integracion_simpson_3_8(f, a , b , Npuntos=99):
 
     if not Npuntos % 3 == 0:
         corrector = Npuntos % 3

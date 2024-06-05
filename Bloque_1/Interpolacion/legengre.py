@@ -1,6 +1,8 @@
 import numpy as np
+import sympy as sym
 
-def lege_interpol(puntosx, puntosy, x):
+def lege_interpol(puntosx, puntosy):
+    x = sym.Symbol('x')
     n = puntosx.size
     pesos = np.ones_like(puntosx)
     for i in range(n):
@@ -11,10 +13,10 @@ def lege_interpol(puntosx, puntosy, x):
     if not np.any(puntosx == x):
         numerador = np.sum(pesos*puntosy/(x-puntosx))
         denominador = np.sum(pesos/(x-puntosx))
-        predic = numerador/denominador
+        ecuacion = numerador/denominador
     else:
         k = np.where(x == puntosx)[0]
-        predic = puntosy[k[0]]
-    
-        
-    return predic
+        ecuacion = puntosy[k[0]] 
+    expresion = sym.simplify(ecuacion)
+    ecuacion = sym.lambdify(x, expresion)
+    return ecuacion, expresion

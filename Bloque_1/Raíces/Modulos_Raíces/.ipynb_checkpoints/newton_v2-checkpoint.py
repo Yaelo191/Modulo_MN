@@ -1,8 +1,10 @@
 import numpy as np
 
 def metodo_newton_v2(def_funcion, def_funcion_prime, a=-10, b=10, tolerancia=1e-05, max_iter=10000):
-    funcion = lambda x: eval(def_funcion)
-    funcion_prime = lambda x: eval(def_funcion_prime)
+    #funcion = lambda x: eval(def_funcion)
+    #funcion_prime = lambda x: eval(def_funcion_prime)
+    funcion = def_funcion
+    funcion_prime = def_funcion_prime
     
     def encontrar(funcion, inicio, fin, paso=0.01):
         x = inicio
