@@ -18,6 +18,7 @@ from .Integrales.simpson_1_3 import integracion_simpson_1_3
 from .Integrales.simpson_3_8 import integracion_simpson_3_8
 from .EDO.edo_rk4 import edo_rk4
 from .EDO.rk4_adaptive import rk4_global
+from .EDO.rk4_vec import rk4_vec
 from .EDO.edo_euler import edo_euler, mejorado_euler
 from .Interpolacion.legengre import lege_interpol
 from .Interpolacion.splinelineal import linear_spline_interpolation
@@ -47,6 +48,7 @@ __all__ = [
     'mejorado_euler',
     'edo_rk4',
     'rk4_global',
+    'rk4_vec',
     'lege_interpol',
     'linear_spline_interpolation',
     'legengre',

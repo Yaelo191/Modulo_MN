@@ -19,6 +19,7 @@ from .Bloque_1.Integrales.simpson_3_8 import integracion_simpson_3_8
 from .Bloque_1.EDO.edo_rk4 import edo_rk4
 from .Bloque_1.EDO.rk4_adaptive import rk4_global
 from .Bloque_1.EDO.edo_euler import edo_euler, mejorado_euler
+from .Bloque_1.EDO.rk4_vec import rk4_vec
 from .Bloque_1.Interpolacion.legengre import lege_interpol
 from .Bloque_1.Interpolacion.splinelineal import linear_spline_interpolation
 from .Bloque_1.Interpolacion.gaussNewton import gaussnewton, getKrs, relErrorTot
@@ -47,6 +48,7 @@ __all__ = [
     'mejorado_euler',
     'edo_rk4',
     'rk4_global',
+    'rke_vec',
     'lege_interpol',
     'linear_spline_interpolation',
     'gaussnewton',
